@@ -1,4 +1,4 @@
-# Rubik's Cube Solver Robot updated 07192021 - Added updated command line for opencv and updated requirements sheet.
+# Rubik's Cube Solver Robot updated 07192021 - Added updated command line for opencv and updated requirements.txt.
 The software that solves the Rubik's Cube on a physical machine.
 The detailed post on how this robot works can be found [here](https://www.robertlucian.com/2019/07/06/rubiks-cube-solver-robot/).
 
@@ -79,6 +79,7 @@ Then, after having installed the dependencies, go on and install the actual libr
 virtualenv -p python3 .venv # this has been tested against 3.5
 source .venv/bin/activate
 cd Rubik-Cube-Solver-Updated\Rubiks_Solver
+#Go to https://pypi.org and put latest version of projects from requirement.txt and update same before running below command.
 pip install -r requirements.txt --index-url https://piwheels.org/simple --extra-index-url https://pypi.org/simple
 ```
 
