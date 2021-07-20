@@ -70,14 +70,15 @@ sudo apt-get install libffi-dev python-dev python3-dev
 
 Dependencies for OpenCV:
 ```bash
-sudo apt-get install libcblas-dev libhdf5-dev libhdf5-serial-dev libatlas-base-dev libjasper-dev libqtgui4 libqt4-test libwebp6 -y
-sudo apt-get install libatlas3-base libsz2 libharfbuzz0b libtiff5 libjasper1 libilmbase12 libopenexr22 libilmbase12 libgstreamer1.0-0 libavcodec57 libavformat57 libavutil55 libswscale4 libqtcore4 -y
+sudo apt install -y libhdf5-103 libharfbuzz0b libwebp6 libjasper1 libopenexr23 libgstreamer1.0-0 libatlas-base-dev libgtk-3-0 libqtgui4 libqt4-test libilmbase23 libavcodec-extra58 libavformat58 libswscale5  libjpeg8-dev zlib1g-dev libffi-dev libopenjp2-7-dev libtiff5
+
 ```
 
 Then, after having installed the dependencies, go on and install the actual libraries:
 ```bash
 virtualenv -p python3 .venv # this has been tested against 3.5
 source .venv/bin/activate
+cd Rubik-Cube-Solver-Updated\Rubiks_Solver
 pip install -r requirements.txt --index-url https://piwheels.org/simple --extra-index-url https://pypi.org/simple
 ```
 
